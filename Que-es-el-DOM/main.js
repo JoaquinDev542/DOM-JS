@@ -1,1 +1,1 @@
-console.log("Dom Contenido");
+console.log(document);
