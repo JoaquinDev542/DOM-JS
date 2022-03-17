@@ -45,3 +45,42 @@ console.log(document);
 
 De esta manera, accedemos a todo el código HTML en nuestra consola.
 
+
+## Document ##
+La interfaz `document` representa cualquier página web cargada en el navegador y sirve como punto de entrada al contenido de la página web, que es el árbol DOM. Es decir, el código HTML.
+
+La interfaz `document` describe las propiedades y métodos comunes para cualquier tipo de documento.
+
+En conclusión, es el nodo raíz del documento HTML.
+
+## Acceder al DOM mediante Selectores ##
+Esta es la manera de acceder al DOM y manipularlo con nuestro JS.
+
+**Métodos**
+
+- document.getElementById("id") => Encuentra un elemento html mediante el Id.
+- document.getElementsByClassName("class") => Encuentra un elemento html mediante clases.
+- document.getElementsByTagName("tag") => Encuentra un elemento html mediante las etiquetas.
+
+- document.querySelector() => Devuelve el primer elemento del documento (utilizando un recorrido primero en profundidad pre ordenado de los nodos del documento) que coincida con el grupo especificado de selectores.
+- document.querySelectorAll() => Devuelve una NodeList estática (no viva) que representa una lista de elementos del documento que coinciden con el grupo de selectores indicados.
+
+Cabe destacar que querySelector devolverá null si no encuentra coincidencias.
+
+Ejemplos de querySelector con los diferentes selectores:
+
+- document.querySelector('h1');
+- document.querySelector('.title');
+- document.querySelector('#title');
+
+De esta manera, podríamos almacenar elementos HTML dentro de una variable/constante de JavaScript.
+
+Ejemplo:
+
+**Código HTML**
+
+``<h1>Soy un H1</h1>``
+
+**Código JS**
+
+``let titulo = document.querySelector('h1');`` => almacenando una etiqueta h1 en nuestro javascript.
