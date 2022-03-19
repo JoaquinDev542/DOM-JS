@@ -84,3 +84,12 @@ Ejemplo:
 **Código JS**
 
 ``let titulo = document.querySelector('h1');`` => almacenando una etiqueta h1 en nuestro javascript.
+
+## Element ##
+Una vez tenemos el elemento HTML, podemos modificarlo.
+
+<!-- https://developer.mozilla.org/es/docs/Web/API/Element -->
+
+<!-- https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction#probando_el_api_del_dom -->
+
+<!-- https://bluuweb.github.io/javascript/02-dom/#buscar-elementos-html -->
