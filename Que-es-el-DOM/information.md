@@ -155,6 +155,34 @@ Element hereda la interfaz genética Node, y juntos, estas dos interfaces propor
 - localName => La parte local del nombre cualificado del elemento.
 
 
+- name => El nombre del elemento.
+- namespaceURI => El URI del espacio del nombre de ese nodo, null si no está especificado.
+- nextSibling => El nodo inmediatamente posterior al primero dado en el árbol, null si no hay.
+- nodeName => El nombre del nodo de ese elemeno.
+- nodeType => Un número que representa el tipo del nodo. Lo mismo que 1 para los elementos DOM. 
+- nodeValue => El valor del nodo. Lo mismo que null para los elementos DOM. 
+- offsetHeight => El alto de un elemento, tal cual está escrito en la composición.
+- offsetLeft => La distancia que hay desde el borde izquierdo del elemento al de su offsetParent. 
+- offsetParent => El elemento del cual todos los cálculos de distancia son actualmente computados. 
+- offsetTop => La distancia desde el borde superior del elemento hasta el de su offsetParent. 
+- offsetWidth => El ancho de un elemento, tal cual está escrito en la composición. 
+- ownerDocument => El documento en le cual está ese nodo, null si no hay.
+
+
+- parentNode => El elemento original, es decir, el elemento padre de ese nodo. Null si no hay dentro del documento de DOM.
+- prefix => El prefijo del espacio de nombre del nodo, null si no está especificado.
+- previousSibling => El nodo inmediatamente anterior al primero dado en el árbol, null si no hay
+- scrollHeight => Muestra la altura del deslizamiento del elemento.
+- scrollLeft => Obtiene/establece el offset de scroll izquierdo de un elemento.
+- scrollTop => Obtiene/establece el offset de scroll superior de un elemento.
+- scrollWidth => Muestra el ancho de deslizamiento de un elemento.
+- style => Un objeto representando las declaraciones de los atributos de estilo del elemento.
+- tabIndex => Obtiene/establece la posición del elemento en el órden de tabulación.
+- tagName => El nombre dado de la etiqueta para el elemento dado.
+- textContent => Obtiene/establece los contenidos textuales de un elemento y todos sus descendentes.
+
+**Métodos**
+
 
 <!-- https://developer.mozilla.org/es/docs/Web/API/Element -->
 
