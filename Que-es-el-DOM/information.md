@@ -49,6 +49,8 @@ De esta manera, accedemos a todo el código HTML en nuestra consola.
 ## Diferenciar entre Nodos y Elementos ##
 Un Nodo en el DOM es cualquier etiqueta del cuerpo, ya sea un párrafo, el body o incluso comentarios de texto. Con JavaScript, podemos modificar etiquetas con el uso de eventos.
 
+Cada parte del árbol del documento se considera que es un NODO.
+
 Las que nos va a interesar a nosotros en la manipulación del DOM en JavaScript serán: 
 
 - Node.ELEMENT_NODE => Un elemento node como una etiqueta <p> , <div> , etc.
