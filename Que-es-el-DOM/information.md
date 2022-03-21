@@ -183,18 +183,35 @@ Element hereda la interfaz genética Node, y juntos, estas dos interfaces propor
 
 **Métodos**
 
+- addEventListener(type, handler, bubble) => Registra un controlador de evento para un tipo de evento específico en un elemento.
+- appendChild(appendedNode) => Inserta un nodo así como el último nodo hijo de este elemento.
+- blur() => Quita el foco del teclado del elemento actual.
+- click() => Simula un click sobre el elemento actual.
+- cloneNode(deep) => Hace copias de un nodo, y opcionalmente de todos sus contenidos.
+- dispatchEvent(event) => Envía un evento a este nodo en el DOM.
+- getAttribute(name) => Devuelve el valor de un atributo nombrado desde el nodo actual.
+- getAttributeNode(name) => Devuelve la representación del nodo del atributo nombrado desde el nodo actual.	
+- getElementsByTagName(name) => Devuelve un conjunto de todos los elementos descendentes, de un nombre de etiqueta particular, desde el elemento actual.
 
 
-<!-- https://www.youtube.com/watch?v=l6npGZa_vgc -->
+- hasAttribute(name) => Verifica si el elemento tiene un atributo especificado o no. Devuelve true/false.
+- hasAttributes() => Verifica si el elemento tiene o no algún atributo.	
+- hasChildNodes() => Verifica si el elemento tiene nodos hijos o no.
+- insertBefore(insertedNode, adjacentNode) => Inserta el primer nodo antes que el segundo Nodo hijo en el DOM
+- normalize() => Limpia todos los nodos de texto debajo de este elemento. 
+- removeAttibute(name) => Quita el atributo nombrado desde el nodo actual.
 
-<!-- https://developer.mozilla.org/es/docs/Web/API/Element -->
 
-<!-- https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction#probando_el_api_del_dom -->
+- removeAttibuteNode (name) => Quita la representación del nodo del atributo nombrado desde el nodo actual.
+- removeChild (removedNode) => Quita el nodo hijo desde el elemento actual.
+- removeEventListener (type, handler) => Quita un oyente de evento desde el elemento.
+- replaceChild (insertedNode , replaceNode) => Reeemplaza un nodo hijo en el elemento actual con otro.
+- scrollIntoView (alignWidthTop) => Recorre la página hasta que el elemento se obtiene en la vista.
+- setAttribute (name , value) => Establece el valor de un atributo nombrado desde el nodo actual.
+- setAttributeNode (name ,attrNode) => Establece la representación del nodo del atributo nombrado desde el nodo actual.
 
-<!-- https://bluuweb.github.io/javascript/02-dom/#buscar-elementos-html -->
 
+**Eventos**
 
-<!-- https://www.youtube.com/watch?v=XydYN4ZQL9s -->
-<!-- https://www.youtube.com/watch?v=qcntA-rcKcQ -->
-<!-- https://www.youtube.com/watch?v=sVitHchciMw -->
-<!-- https://www.youtube.com/watch?v=m7VxR9CxU2s -->
+Son propiedades correspondientes a los atributos del evento "on" en HTML.
+
