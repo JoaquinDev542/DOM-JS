@@ -184,6 +184,9 @@ Element hereda la interfaz genética Node, y juntos, estas dos interfaces propor
 **Métodos**
 
 
+
+<!-- https://www.youtube.com/watch?v=l6npGZa_vgc -->
+
 <!-- https://developer.mozilla.org/es/docs/Web/API/Element -->
 
 <!-- https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction#probando_el_api_del_dom -->
