@@ -96,7 +96,7 @@ console.log($firstCard.dataset.message);
 delete $firstCard.dataset.message;
 ````
 
-## ¿Cómo funciona los métodos getAttribute() , setAttribute() y removeAttribute() ? ##
+## ¿Cómo funciona los métodos getAttribute() , setAttribute() , removeAttribute() y hasAttribute() ? ##
 
 Con estos métodos, podemos obtener, establecer y eliminar el valor de los atributos data-* y borralos.
 
@@ -140,4 +140,14 @@ Código JS
 console.log($firstCard.removeAttribute("data-firstCard"));
 ````
 
+### hasAttribute() ###
+El método `hasAttribute` devuelve un valor Boolean indicando si el elemento tiene el atributo especificado o no.
 
+Ejemplo:
+
+Código JS
+
+````
+console.log($firstCard.hasAttribute(data-firstCard));
+// true
+````
