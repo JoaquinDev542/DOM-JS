@@ -14,3 +14,4 @@ https://www.youtube.com/watch?v=vAw2pYQzG30
 https://developer.mozilla.org/es/docs/Web/API/Element/classList
 https://www.delftstack.com/es/howto/javascript/javascript-change-css-class/
 https://www.delftstack.com/es/howto/javascript/change-the-class-of-an-element-with-javascript/
+https://www.digitalocean.com/community/tutorials/como-modificar-atributos-clases-y-estilos-en-el-dom-es
