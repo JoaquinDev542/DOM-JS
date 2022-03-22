@@ -11,7 +11,7 @@ Es decir, acceder a las clases de nuestro elemento HTMl y agregarle clases, remo
 ## Métodos para la modificación de clases ##
 Estos son los métodos que tenemos para la modificación de clases.
 
-### add()###
+### add() ###
 - element.classList.add("className" , "className2"); => El método `add` permite añadir una o más clases a nuestro elemento HTML. Si estas clases ya existieran en el atributo del elemento, serán ignoradas.
 
 **Ejemplo:**
