@@ -9,9 +9,7 @@ https://www.youtube.com/watch?v=m7VxR9CxU2s
 
 - Modificar Atributos y Clases
 https://www.youtube.com/watch?v=vAw2pYQzG30
+min 11
 
-- Modificar clases
-https://developer.mozilla.org/es/docs/Web/API/Element/classList
-https://www.delftstack.com/es/howto/javascript/javascript-change-css-class/
-https://www.delftstack.com/es/howto/javascript/change-the-class-of-an-element-with-javascript/
-https://www.digitalocean.com/community/tutorials/como-modificar-atributos-clases-y-estilos-en-el-dom-es
+- Estilos y variables CSS en el DOm de JS
+https://www.youtube.com/watch?v=asR6_XGzI3s
