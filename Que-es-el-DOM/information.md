@@ -53,7 +53,7 @@ Cada parte del árbol del documento se considera que es un NODO.
 
 Las que nos va a interesar a nosotros en la manipulación del DOM en JavaScript serán: 
 
-- Node.ELEMENT_NODE => Un elemento node como una etiqueta <p> , <div> , etc.
+- Node.ELEMENT_NODE => Un elemento node como una etiqueta `<p>` , `<div>` , etc.
 - Node.TEXT_NODE => El contenido dentro de un elemento, ya sea el texto o el Attr.
 
 ## Document ##
