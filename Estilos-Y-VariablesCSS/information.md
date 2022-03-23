@@ -29,7 +29,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 const $title = document.querySelector(".title");
 
 console.log($title.style);
@@ -55,7 +55,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 const $title = document.querySelector(".title");
 
 console.log(getComputedStyle($title).getPropertyValue("color"));
@@ -78,7 +78,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 const $title = document.querySelector(".title");
 
 console.log($title.getAttribute("style"));
@@ -104,7 +104,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 const $title = document.querySelector(".title");
 
 console.log($title.color = "red");
@@ -114,7 +114,7 @@ OutPut
 `red`
 
 
-###  console.log(nameClass.style.setProperty("property" , "value") ###
+### console.log(nameClass.style.setProperty("property" , "value") ###
 
 Ejemplo:
 
@@ -122,14 +122,59 @@ Código HTML
 
 `<h1 class="title" style="color: green;">Soy un titulo</h1>`
 
-const $title = document.querySelector(".title");
 
 Código JS
 
-````
+````js
+const $title = document.querySelector(".title");
+
 $title.getAttribute("color");
 console.log($title);
 console.log($title.style.setProperty("color" , "blue"));
 console.log($title);
-`````
+````
 
+## Variables CSS en JavaScript ##
+Primero que nada, hay que entender que son las Variables en CSS.
+
+Las Variables o Custom-Properties, son entidades definidas por autores de CSS que contienen valores específicos que se pueden volver a utilizar en un documento.
+
+Se establecen mediante la notación de propiedades personalizadas (por ejemplo, --main-color: black;) y se acceden mediante la función var() (por ejemplo, color: var (--main-color);). 
+
+Cabe destacar, que estas custom-Properties, irán en nuestro CSS, en nuestro pseudoElemento `::root`, ya que es la raíz de nuestra página web.
+
+Cuando lo queramos usar en JavaScript, lo haremos de la misma manera que cuando cambiamos valores mediante el Objeto `style`.
+
+Ejemplo:
+
+Código HTML
+
+`<h1 class="title" style="color: green;">Soy un titulo</h1>`
+
+Código CSS
+
+````css
+:root {
+    --clr-red: red;
+    --clr-green: green;
+}
+
+.title {
+    color: var(--clr-red) ;
+}
+````
+
+Código JS
+
+````js
+const $title = document.querySelector(".title");
+
+$title.getAttribute("color");
+console.log($title);
+$title.style.setProperty("color" , "--clr-red");
+````
+
+OutPut
+`El color cambiará a verde`
+
+Es decir, pasa de color rojo a verde, mediante el Custom Property.
