@@ -1,4 +1,90 @@
-# Atributos y Data Attributes #
+# ClassList y Modificación de clases en el DOM
+
+## ¿Qué es classList?
+La propiedad de lectura `classList` nos permite activar las lista de tokens(DOMTokenList) de los atributos de clase del elemento. Es decir, usar `classList` es una forma práctica de acceder a la lista de clases de un elemento.
+
+``$title.classList.[add,remove,ect,ect]``
+
+Es decir, acceder a las clases de nuestro elemento HTMl y agregarle clases, removerlas, reemplazarlas,etc.
+
+
+## Métodos para la modificación de clases
+Estos son los métodos que tenemos para la modificación de clases.
+
+### add() ###
+- element.classList.add("className" , "className2"); => El método `add` permite añadir una o más clases a nuestro elemento HTML. Si estas clases ya existieran en el atributo del elemento, serán ignoradas.
+
+**Ejemplo:**
+
+Código HTML
+
+`<h1 class="title" data-info="Titulo principal">Soy un h1</h1>`
+
+
+```js
+const $title = document.querySelector(".title");
+
+$title.classList.add("main-title");
+```
+
+OutPut
+
+`<h1 class="title main-title" data-info="Titulo principal">Soy un h1</h1>`
+
+
+### remove() 
+- element.classList.remove("classNameToRemove" , "classNameToRemove2"); => El método `remove` nos permite eliminar una o más clases a nuestro elemento HTML.
+
+**Ejemplo:**
+
+Codigo HTML
+
+`<h1 class="title main-title" data-info="Titulo principal">Soy un h1</h1>`
+
+
+Código JS
+
+
+`$title.classList.remove("main-title");`
+
+
+OutPut
+
+`<h1 class="title" data-info="Titulo principal">Soy un h1</h1>`
+
+
+### toggle()
+- element.classList.toggle("className" , [force]) => El método `toggle` nos permite poner o quitar una clase mediante un funcionamiento que demos, por ejemplo cuando hagamos "click", que se coloque la clase, y cuando repitamos el "click" que se quite la clase. Muy utilizado en los menú responsive. (force vendría a hacer un "click").
+
+
+### contains()
+- element.classList.contains("className"); => El método `contains` devuelve un valor boolean (true/false), dependiendo si tiene o no esa clase. Es decir, comprueba si esa clase existe o no.
+
+Código HTML
+
+`<h1 class="title" data-info="Titulo principal">Soy un h1</h1>`
+
+Código JS
+
+```js
+if($title.classList.contains("title") === true) {
+    console.log("Nuestro h1, contiene la clase title");
+} else {
+    console.log("Nuestro h1, NO contiene la clase title");
+}
+```
+
+OutPut
+
+`//Nuestro h1, contiene la clase title`
+
+
+### replace() ###
+- element.classList.replace("oldClass" , "newClass"); => El método `replace` reemplaza una clase por otra nueva.
+
+Código HTML
+
+`<h1 class="title" data-info="Titulo principal">Soy un h1</h1>`# Atributos y Data Attributes #
 
 ## Definiciones ##
 Los atributos **data-** son una de las grandes incorporaciones en HTML5 y tienen un rol importante en el desarrollo de webs semánticas.
@@ -38,9 +124,8 @@ Datos a tener en cuenta:
 
 **Ejemplo con la propiedad dataset**
 
-Código HTML
 
-````
+```html
  <section class="cards">
 
          <article class="card"  data-message="ValueToShowInConsole">
@@ -48,37 +133,34 @@ Código HTML
         </article>
 
     </section>
-````
+```
 
-Código JS
 
-````
+```js
 const $firstCard = document.querySelector(".card");
 
 console.log($firstCard.dataset.message);
 // ValueToShowInConsole
-````
+```
 
 Como vemos, para acceder a nuestro valor de nuestro data-*, debemos de utilizar la propiedad dataset seguido del nombre del atributo quitandole el prefijo `data-`.
 
-### ¿Cómo renombrar el valor de un data-*? ###
+### ¿Cómo renombrar el valor de un data-*?
 
 Para modificar el valor de un atributo data-*, es tan fácil como asignarle un nuevo valor.
 
 Ejemplo:
 
-Código JS
-
-````
+```js
 const $firstCard = document.querySelector(".card");
 console.log($firstCard.dataset.message);
 // ValueToShowInConsole
 
 $firstCard.dataset.message = "Nuevo valor";
 //Nuevo valor
-````
+```
 
-### ¿Cómo eliminar el atributo data-* o quitarle su valor? ###
+### ¿Cómo eliminar el atributo data-* o quitarle su valor? 
 
 Si queremos quitarle el valor a algún atributo data-*, debemos dejarle un string vacío o asignarle el valor null.
 
@@ -86,68 +168,69 @@ Si queremos eliminar un atributo data-*, necesitaremos de utilizar la palabra cl
 
 Ejemplo:
 
-Código JS
 
-````
+```js
 const $firstCard = document.querySelector(".card");
 console.log($firstCard.dataset.message);
 // ValueToShowInConsole
 
 delete $firstCard.dataset.message;
-````
+```
 
-## ¿Cómo funciona los métodos getAttribute() , setAttribute() , removeAttribute() y hasAttribute() ? ##
+## ¿Cómo funciona los métodos getAttribute() , setAttribute() , removeAttribute() y hasAttribute() ? 
 
 Con estos métodos, podemos obtener, establecer y eliminar el valor de los atributos data-* y borralos.
 
-### getAttribute() ###
+### getAttribute() 
 
 Con el método `getAttribute` logramos como bien dice la palabra, obtener el valor de nuestro atributo data-*.
 
 **Ejemplo con el método getAttribute()**
 
-Código JS
 
-````
+```js
 const $firstCard = document.querySelector(".card");
 
 console.log($firstCard.getAttribute("data-firstCard"));
 // ValueToShowInConsole
-````
+```
 
-### setAttribute() ###
+### setAttribute() 
 
 Con el método `setAttribute` logramos setear un valor y reasignarle otro nuevo a nuestro atributo data-*.
 
-Ejemplo:
+**_Ejemplo:_**
 
-Código JS
 
-````
+```js
 console.log($firstCard.setAttribute("data-firstCard" , "Nuevo Valor"));
 // Nuevo Valor
-````
+```
 
-### removeAttribute() ###
+### removeAttribute() 
 
 Con el método `remoteAttribute` logramos eliminar un atributo data-*.
 
-Ejemplo:
+**_Ejemplo:_**
 
-Código JS
 
-````
+```js
 console.log($firstCard.removeAttribute("data-firstCard"));
-````
+```
 
-### hasAttribute() ###
+### hasAttribute() 
 El método `hasAttribute` devuelve un valor Boolean indicando si el elemento tiene el atributo especificado o no.
 
-Ejemplo:
+**_Ejemplo:_**
 
-Código JS
-
-````
+```js
 console.log($firstCard.hasAttribute(data-firstCard));
 // true
 ````
+Código JS
+
+`$title.classList.replace("title" , "newClass");`
+
+OutPut
+
+`<h1 class="newClass"data-info="Titulo principal">Soy un h1</h1>`
