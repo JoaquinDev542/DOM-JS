@@ -133,4 +133,3 @@ La propiedad `className`, nos permite devolver el nombre de nuestra clase. Es de
 El hecho de que coloquemos `className` en vez de `class`, se debe a que `class` es una palabra reservada para la creación de clases en la Programación Orientada a Objetos, por ende, utilizamos `className` para evitar conflictos.
 
 La diferencia con la palabra reservada `classList`, es que está devolverá un DOMTokenList, muy parecido a un array con la posición que tenga la clase, cuál es el valor, etc.
-
