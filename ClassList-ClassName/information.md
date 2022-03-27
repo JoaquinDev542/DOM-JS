@@ -22,7 +22,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 const $title = document.querySelector(".title");
 
 $title.classList.add("main-title");
@@ -100,7 +100,7 @@ Código HTML
 
 Código JS
 
-````
+````js
 if($title.classList.contains("title") === true) {
     console.log("Nuestro h1, contiene la clase title");
 } else {
