@@ -3,20 +3,9 @@
 https://developer.mozilla.org/es/docs/Web/API/Element#eventos
 
 
-**Resumen**
+## Texto y HTML
+https://www.youtube.com/watch?v=ezjxA4o2-Ck
 
-youtube.com/watch?v=sVitHchciMw
+https://developer.mozilla.org/es/docs/Web/API/Element/outerHTML
 
-https://www.youtube.com/watch?v=m7VxR9CxU2s
-
-
-- Modificar Atributos y Clases
-
-_min 11_
-
-https://www.youtube.com/watch?v=vAw2pYQzG30
-
-
-- Estilos y variables CSS en el DOm de JS
-- 
-https://www.youtube.com/watch?v=asR6_XGzI3s
+https://es.stackoverflow.com/questions/127011/cual-es-la-diferencia-entre-innerhtml-y-outerhtml

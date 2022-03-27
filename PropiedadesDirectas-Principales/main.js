@@ -10,18 +10,18 @@
 
 
 // console.log($input.value);
-// // Soy un texto en un input
+// Soy un texto en un input
 
 // console.log($paragraph.id);
-// // paragraph
+// paragraph
 
 // console.log($title.textContent);
-// // Propiedades Principales más Usadas
+// Propiedades Principales más Usadas
 
 // console.log($title.innerHTML);
-// // Propiedades Principales más <span>Usadas</span>
+// Propiedades Principales más <span>Usadas</span>
 
-// // $title.textContent = "Cambiando el valor del contenido";
+// $title.textContent = "Cambiando el valor del contenido";
 // $paragraph.id = "nuevoID";
 
 // console.log($paragraph);

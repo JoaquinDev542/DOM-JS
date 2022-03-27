@@ -202,4 +202,8 @@ Como podemos observar, al usar la propiedad `innerHTML` los elementos hijos se m
 - `textContent` es una propiedad del objeto Node. `innerHTMl` es una propiedad del objeto Element y HTMLElement.
 
 
+En conclusión, si se necesita introducir solo texto, utilizamos `textContent`. 
+Si necesitamos introducir código HTML, utilizaremos `innerHTML`.
+
+## outerHTML
 
