@@ -13,3 +13,17 @@
 // console.log($title);
 
 /* <h1 class="title" data-info="Titulo principal">Soy un h1</h1> */
+
+// const $title = document.querySelector(".title");
+
+
+// console.log($title.className);
+// title title--principal
+
+
+// const $title = document.querySelector(".title");
+// const $link = document.querySelector(".link");
+
+// $link.addEventListener ("click" , () => {
+//     $title.classList.toggle("active");
+// })

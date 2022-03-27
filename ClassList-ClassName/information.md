@@ -50,7 +50,45 @@ OutPut
 
 
 ### toggle() ###
-- element.classList.toggle("className" , [force]) => El método `toggle` nos permite poner o quitar una clase mediante un funcionamiento que demos, por ejemplo cuando hagamos "click", que se coloque la clase, y cuando repitamos el "click" que se quite la clase. Muy utilizado en los menú responsive. (force vendría a hacer un "click").
+- element.classList.toggle("className" , [force]) => El método `toggle` nos permite poner o quitar una clase mediante un funcionamiento que demos (funciona como una palanca), por ejemplo cuando hagamos "click", que se coloque la clase, y cuando repitamos el "click" que se quite la clase. Muy utilizado en los menú responsive. (force vendría a hacer un "click").
+
+Si el elemento no tiene una clase se la agrega, y si la tiene se la quita.
+
+Ejemplo:
+
+Código HTMl
+
+````html
+<a href="#" class="link">Toggle</a>
+
+<h1 class="title title--principal" data-info="Titulo principal">Soy un h1</h1>
+````
+
+Código CSS
+
+````css
+.title {
+    color:red;
+}
+
+.title.active {
+    color:green;
+}
+````
+
+Código JS
+
+````js
+const $title = document.querySelector(".title");
+const $link = document.querySelector(".link");
+
+$link.addEventListener ("click" , () => {
+    $title.classList.toggle("active");
+})
+````
+
+OutPut:
+Cuando le damos click en nuestro enlace se cambiará el color de rojo a verde, y cuando le hagamos click de nuevo, volverá el color rojo. Ya que cuando hacemos `"click"` se agrega una clase, y cuando reclickeamos, quitamos la clase.
 
 
 ### contains() ###
@@ -87,3 +125,12 @@ Código JS
 
 OutPut
 `<h1 class="newClass"data-info="Titulo principal">Soy un h1</h1>`
+
+
+# ClassName #
+La propiedad `className`, nos permite devolver el nombre de nuestra clase. Es decir, obtiene y establece el valor del atributo `class` del elemento especificado.
+
+El hecho de que coloquemos `className` en vez de `class`, se debe a que `class` es una palabra reservada para la creación de clases en la Programación Orientada a Objetos, por ende, utilizamos `className` para evitar conflictos.
+
+La diferencia con la palabra reservada `classList`, es que está devolverá un DOMTokenList, muy parecido a un array con la posición que tenga la clase, cuál es el valor, etc.
+
