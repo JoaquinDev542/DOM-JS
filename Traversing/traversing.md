@@ -122,30 +122,91 @@ console.log($list.lastElementChild);
 // <li><a href="#">Link 3</a></li>
 ````
 
-
 ## Hermanos - sibling ##
 
 ### previusElementSibling ###
+La propiedad `previusElementSibling` selecciona el elemento hermano anterior dentro de la lista de hijos de su padre. Si el elemento no tiene ningún hermano, el valor retornado será `null`.
+
+Ejemplo:
+
+Código HTML
+
+````html
+<section class="parent">
+    <p class="sibling1">Lorem ipsum dolor sit amet.</p>
+    <h3 class="sibling2">Lorem, ipsum dolor.</h3>
+    <span class="sibling">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+</section>
+````
+
+Código JS
+
+````javascript
+const $sibling = document.querySelector(".sibling");
+console.log($sibling.previousElementSibling);
+// <h3 class="sibling2">Lorem, ipsum dolor.</h3> 
+````
+
+Como se puede observar, selecciona el hermano anterior a nuestro elemento `<span class="sibling"></span>`
 
 ### nextElementSibling ###
+La propiedad `nextElementSibling` selecciona el elemento hermano posterior dentro de la lista de hijos de su padre. Si el elemento no tiene ningún hermano, el valor retornado será `null`.
+
+Ejemplo:
+
+Código HTML
+
+````html
+<section class="parent">
+    <p class="sibling1">Lorem ipsum dolor sit amet.</p>
+    <h3 class="sibling2">Lorem, ipsum dolor.</h3>
+    <span class="sibling">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+</section>
+````
+
+Código JS
+
+````javascript
+const $sibling2 = document.querySelector(".sibling2");
+console.log($sibling2.nextElementSibling);
+//<span class="sibling">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+````
+
+Como podemos ver, selecciona al hermano posterior a él, en este caso, al span con la clase `sibling`.
 
 ## Padre - parent ##
 
 ### parentElement ###
+La propiedad `parentElement` selecciona y devuelve el elemento padre de nuestro elemento. Si no obtiene ningún elemento padre, el valor retornado será null.
 
+Es decir, nos devolverá neustro padre contenedor.
 
-Enfocado a los elementos, h1, p , a, etc,etc.
+Ejemplo: 
 
-propiedades
+Código HTML
 
-parentElement = Nos devuelve el padre de nuestro elemento.
+````html
+<body>
+    <ul class="list">
+        <li><a href="x">Link 1</a>
+        <li><a href="x">Link 2</a>
+        <li><a href="x">Link 3</a>
+    </ul>
+    <section class="parent">
+        <p class="sibling1">Lorem ipsum dolor sit amet.</p>
+        <h3 class="sibling2">Lorem, ipsum dolor.</h3>
+        <span class="sibling">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+    </section>
+    <script src="main.js"></script>
+</body>
+````
 
-hermanos=>
+Código JS
 
-previousElementSibling = el hermano anterior.
-nextElementSibling = el hermano siguente.
- 
- 
-método
+````js
+const $parent = document.querySelector(".parent");
+console.log($parent.parentElement);
+// <body></body>
+````
 
-closest("div") => busca el padre mas cercano del tipo de selector que le demos. 
+Como podemos observar, el valor retornado por la propiedad parentElement es el padre de nuestro elemento HTML.
