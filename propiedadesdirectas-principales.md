@@ -214,4 +214,4 @@ Como podemos observar, al usar la propiedad `innerHTML` los elementos hijos se m
 
 En conclusión, si se necesita introducir solo texto, utilizamos `textContent`. Si necesitamos introducir código HTML, utilizaremos `innerHTML`.
 
-### outerHTML
+
