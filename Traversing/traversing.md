@@ -210,3 +210,35 @@ console.log($parent.parentElement);
 ````
 
 Como podemos observar, el valor retornado por la propiedad parentElement es el padre de nuestro elemento HTML.
+
+## Método closest() ##
+El método `closest()` nos permite atravesar los elementos hasta que encuentre el padre más cercano de ese parámetro que le hayamos dado.
+
+Es decir, atravesaremos elementos hasta que el parámetro coincida con nuestro elemento HTML.
+
+Si no encuentra un padre cercano, el valor retornado será `null`.
+
+Sintaxis:
+`targetElement.closest(selectors);`
+
+Ejemplo:
+
+Código HTML
+
+````html
+<div class="myDiv">
+    <span class="mySpan">
+        <strong class="myStrong">Im a text</strong>
+    </span>
+</div>
+````
+
+Código JS
+
+````js
+const $myStrong = document.querySelector(".myStrong");
+console.log($myStrong.closest("div"));
+// <div class="myDiv"</div>
+````
+
+Este método nos servirá cuando queramos buscar el elemento padre más cercano y no sepamos cual es, simplemente mediante el parámetro lo encontraremos.

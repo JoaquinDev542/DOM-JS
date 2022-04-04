@@ -7,5 +7,9 @@
 // console.log($sibling2.previousElementSibling);
 //<span class="sibling">Lorem ipsum dolor sit amet consectetur adipisicing.</span>
 
-const $parent = document.querySelector(".parent");
-console.log($parent.parentElement);
+// const $parent = document.querySelector(".parent");
+// console.log($parent.parentElement);
+
+
+const $myStrong = document.querySelector(".myStrong");
+console.log($myStrong.closest("div"));
