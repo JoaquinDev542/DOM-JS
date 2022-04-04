@@ -5,3 +5,4 @@
 * [ClassList Y ClassName](classlist-classname.md)
 * [Estilos Y VariablesCSS](estilos-y-variablescss.md)
 * [Propiedades Directas Principales](propiedadesdirectas-principales.md)
+* [DOM Traversing](dom-traversing.md)
