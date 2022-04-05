@@ -1,5 +1,15 @@
 # Insertar, Clonar y Borrar Elementos #
 
+## Insertar Elementos ##
+
+### appendChild ###
+
+## ##
+
+## ##
+
+## ##
+
 appendChild siempre se coloca en el último elemento.
 
 insertBefore(newElement , referenceElement)
@@ -20,5 +30,5 @@ replaceWith(newChild)
 Clonar y eliminar elementos
 
 cloneNode(true|false)
-remove()
+remove() 
 removeChild(child)
