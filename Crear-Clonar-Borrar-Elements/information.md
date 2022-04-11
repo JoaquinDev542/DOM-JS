@@ -53,6 +53,10 @@ Como podemos ver, siempre aparecerá como último elemento. Cabe destacar, que p
 ## Insertar Elementos ##
 
 ### insertBefore(newElement , referenceElement) ###
+El método de nodo `insertBefore` inserta un nodo antes del nodo de referencia como hijo de un nodo padre indicado. Es decir, el método `insertBefore` inserta un nodo como hijo de un nodo padre.
+
+Si ya hay un elemento hijo en nuestro elemento padre, este elemento se pasará como segunda posición, dejando al elemento que contiene el `insertBefore` como primer hijo.
+
 
 ### insertAdjacentElement(position , element) ###
 **Valores de position**
@@ -61,3 +65,23 @@ Como podemos ver, siempre aparecerá como último elemento. Cabe destacar, que p
 - beforeend
 - afterend
 
+insertAdjacentElement(position , element)
+
+
+insertAdjacentHTML = no se usa nunca xd
+insertAdjacentText = no se usa nunca xd
+
+
+positions2 = before(), prepend(), append(), after() 
+
+
+
+
+replaceWith(newChild)
+
+
+Clonar y eliminar elementos
+
+cloneNode(true|false)
+remove() 
+removeChild(child)
